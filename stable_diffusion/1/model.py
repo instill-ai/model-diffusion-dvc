@@ -177,7 +177,7 @@ class TritonPythonModel:
                 output = pb_utils.get_output_tensor_by_name(
                     inference_response, "last_hidden_state"
                 )
-                text_embeddings: torch.Tensor = torch.from_dlpack(output.to_dlpack())
+                text_embeddings: torch.Tensor = torch.from_dlpack(output.to_dlpack()).to(self.device)
 
             # duplicate text embeddings for each generation per prompt, using mps friendly method
             bs_embed, seq_len, _ = text_embeddings.shape
