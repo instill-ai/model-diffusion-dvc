@@ -37,6 +37,7 @@ from diffusers.schedulers import (
     PNDMScheduler,
 )
 
+
 try:
     # noinspection PyUnresolvedReferences
     import triton_python_backend_utils as pb_utils
@@ -76,7 +77,7 @@ class TritonPythonModel:
 
         self.height = 512
         self.width = 512
-        self.num_inference_steps = 5
+        self.num_inference_steps = 50
         self.guidance_scale = 7.5
         self.eta = 0.0
 
@@ -163,6 +164,7 @@ class TritonPythonModel:
             inputs = [
                 pb_utils.Tensor.from_dlpack("input_ids", torch.to_dlpack(input_ids))
             ]
+
             inference_request = pb_utils.InferenceRequest(
                 model_name="text_encoder",
                 requested_output_names=["last_hidden_state"],

@@ -16,14 +16,14 @@ input [
   {
     name: "encoder_hidden_states"
     data_type: TYPE_FP32
-    dims: [ -1, -1, 1024]
+    dims: [ -1, -1, 768]
   }
 ]
 output [
   {
     name: "out_sample"
     data_type: TYPE_FP32
-    dims: [ -1, -1, -1, -1 ]
+    dims: [ -1, 4, -1, -1 ]
   }
 ]
 instance_group [
