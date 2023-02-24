@@ -1,0 +1,4 @@
+outs:
+- md5: 8e620dc599cd12350a487aaa819976da
+  size: 983040
+  path: onnx__MatMul_9441

@@ -1,0 +1,4 @@
+outs:
+- md5: 4ea0db5faf8e2128387d3b77733725a9
+  size: 5120
+  path: down_blocks.2.attentions.0.proj_out.bias

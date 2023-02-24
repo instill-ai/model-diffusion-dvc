@@ -1,0 +1,4 @@
+outs:
+- md5: 391af01c064b158c05910a074ed9fe95
+  size: 5120
+  path: down_blocks.2.attentions.0.transformer_blocks.0.norm3.bias

@@ -1,0 +1,4 @@
+outs:
+- md5: 52a85565f1bb6bcc90d0993abac1d248
+  size: 5120
+  path: onnx__Mul_9235

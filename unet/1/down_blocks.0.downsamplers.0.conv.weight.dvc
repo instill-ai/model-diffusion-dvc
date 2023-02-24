@@ -1,0 +1,4 @@
+outs:
+- md5: bab21f3245023d852f53f33b1487b30d
+  size: 3686400
+  path: down_blocks.0.downsamplers.0.conv.weight

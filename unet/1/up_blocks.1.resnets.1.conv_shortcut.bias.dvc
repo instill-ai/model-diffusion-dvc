@@ -1,0 +1,4 @@
+outs:
+- md5: d59b41fff77caebf2d949db457a53cb5
+  size: 5120
+  path: up_blocks.1.resnets.1.conv_shortcut.bias

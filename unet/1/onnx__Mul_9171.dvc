@@ -1,0 +1,4 @@
+outs:
+- md5: db647085e495a106c90a2114eb79a2ac
+  size: 5120
+  path: onnx__Mul_9171

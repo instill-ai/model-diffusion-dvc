@@ -1,0 +1,4 @@
+outs:
+- md5: 5ef7c618b6ed110dd005f9944c4c1e94
+  size: 3276800
+  path: down_blocks.1.resnets.0.time_emb_proj.weight

@@ -1,0 +1,4 @@
+outs:
+- md5: 1935b952b7b0f8911579c644fcf684ab
+  size: 5120
+  path: up_blocks.1.attentions.2.transformer_blocks.0.norm2.weight

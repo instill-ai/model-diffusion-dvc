@@ -1,0 +1,4 @@
+outs:
+- md5: 195f36a4a74aa7497e5e5063c48caa6b
+  size: 58982400
+  path: up_blocks.1.upsamplers.0.conv.weight

@@ -1,0 +1,4 @@
+outs:
+- md5: 19459b85ad93fe50db2b26c5ac008fc0
+  size: 13107200
+  path: up_blocks.0.resnets.2.conv_shortcut.weight

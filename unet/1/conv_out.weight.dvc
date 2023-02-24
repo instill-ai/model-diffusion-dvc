@@ -1,0 +1,4 @@
+outs:
+- md5: dbf5b8b75d7e9f70988bc45a171e646a
+  size: 46080
+  path: conv_out.weight

@@ -1,0 +1,4 @@
+outs:
+- md5: 7134c9cbbd32347e9ae6944225100b12
+  size: 1638400
+  path: down_blocks.1.attentions.1.proj_out.weight

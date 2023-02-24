@@ -1,0 +1,4 @@
+outs:
+- md5: de1588806ff6c146c20c4e58a8f65252
+  size: 5120
+  path: down_blocks.2.attentions.1.transformer_blocks.0.ff.net.2.bias

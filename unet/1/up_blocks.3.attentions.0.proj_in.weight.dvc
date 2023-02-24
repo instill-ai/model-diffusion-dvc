@@ -1,0 +1,4 @@
+outs:
+- md5: 7f8a88b022dd27137b3b9c2abb36c41c
+  size: 409600
+  path: up_blocks.3.attentions.0.proj_in.weight
