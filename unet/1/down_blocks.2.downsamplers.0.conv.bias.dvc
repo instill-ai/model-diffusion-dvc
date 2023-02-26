@@ -1,4 +1,0 @@
-outs:
-- md5: d709b2d3624426a5af6e83b1802ce4d8
-  size: 5120
-  path: down_blocks.2.downsamplers.0.conv.bias

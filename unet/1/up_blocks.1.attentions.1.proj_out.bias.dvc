@@ -1,4 +1,0 @@
-outs:
-- md5: 044fe078b8e9702c900d98e86db26db0
-  size: 5120
-  path: up_blocks.1.attentions.1.proj_out.bias

@@ -1,4 +1,0 @@
-outs:
-- md5: a8ba6ad5d989e90619680f01619a8966
-  size: 5120
-  path: down_blocks.2.attentions.1.transformer_blocks.0.norm2.weight

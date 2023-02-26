@@ -1,4 +1,0 @@
-outs:
-- md5: 42e38d5d646e45b20454dc8047a4d7ee
-  size: 14745600
-  path: down_blocks.1.downsamplers.0.conv.weight

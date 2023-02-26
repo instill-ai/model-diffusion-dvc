@@ -1,4 +1,0 @@
-outs:
-- md5: 5cbe0017966630b3c8c25f36ec3f4284
-  size: 5120
-  path: down_blocks.3.resnets.1.time_emb_proj.bias

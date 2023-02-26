@@ -80,6 +80,7 @@ class TritonPythonModel:
         self.num_inference_steps = 50
         self.guidance_scale = 7.5
         self.eta = 0.0
+        print("------------>>>> initttttttt")
 
     def execute(self, requests) -> "List[List[pb_utils.Tensor]]":
         """
@@ -87,6 +88,7 @@ class TritonPythonModel:
         :param requests: 1 or more requests received by Triton server.
         :return: text as input tensors
         """
+        print("------------->>>>>> exec")
         responses = []
         # for loop for batch requests (disabled in our case)
         for request in requests:
@@ -141,7 +143,7 @@ class TritonPythonModel:
             ## Fix later
             if negative_prompt[0] == "NONE":
                 negative_prompt = None
-
+            print("-------->>>>> negative_prompt ", negative_prompt)
             # get prompt text embeddings
             text_input = self.tokenizer(
                 prompt,
@@ -311,9 +313,9 @@ class TritonPythonModel:
                     latent_model_input, t
                 )
 
-                latent_model_input = latent_model_input.type(dtype=torch.float32)
-                timestep = t[None].type(dtype=torch.float32)
-                encoder_hidden_states = text_embeddings.type(dtype=torch.float32)
+                latent_model_input = latent_model_input.type(dtype=torch.float16)
+                timestep = t[None].type(dtype=torch.float16)
+                encoder_hidden_states = text_embeddings.type(dtype=torch.float16)
 
                 inputs = [
                     pb_utils.Tensor.from_dlpack(
@@ -356,7 +358,7 @@ class TritonPythonModel:
             # scale and decode the image latents with vae
             latents = 1 / 0.18215 * latents
 
-            latents = latents.type(dtype=torch.float32)
+            latents = latents.type(dtype=torch.float16)
             inputs = [
                 pb_utils.Tensor.from_dlpack(
                     "latent_sample", torch.to_dlpack(latents)

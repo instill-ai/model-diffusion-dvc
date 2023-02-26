@@ -1,4 +1,0 @@
-outs:
-- md5: 2568e2e68c64bc86f3d24a1a68bbe830
-  size: 58982400
-  path: up_blocks.1.resnets.0.conv2.weight

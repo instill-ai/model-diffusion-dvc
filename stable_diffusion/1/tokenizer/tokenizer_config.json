@@ -19,7 +19,7 @@
   },
   "errors": "replace",
   "model_max_length": 77,
-  "name_or_path": "/Users/tamnguyen/.cache/huggingface/diffusers/models--runwayml--stable-diffusion-v1-5/snapshots/39593d5650112b4cc580433f6b0435385882d819/tokenizer",
+  "name_or_path": "/home/phelan.nguyen/.cache/huggingface/diffusers/models--runwayml--stable-diffusion-v1-5/snapshots/39593d5650112b4cc580433f6b0435385882d819/tokenizer",
   "pad_token": "<|endoftext|>",
   "special_tokens_map_file": "./special_tokens_map.json",
   "tokenizer_class": "CLIPTokenizer",

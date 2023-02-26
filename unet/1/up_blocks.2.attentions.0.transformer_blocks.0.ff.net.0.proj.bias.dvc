@@ -1,4 +1,0 @@
-outs:
-- md5: 57afd4497b9b4715fef7d7864353460a
-  size: 20480
-  path: up_blocks.2.attentions.0.transformer_blocks.0.ff.net.0.proj.bias
