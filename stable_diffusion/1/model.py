@@ -68,7 +68,7 @@ class TritonPythonModel:
         :param args: arguments from Triton config file
         """
         current_name: str = os.path.dirname(os.path.abspath(__file__))
-        self.device = "cpu" if args["model_instance_kind"] == "CPU" else "cuda"
+        self.device = "cpu" if args["model_instance_kind"] == "CPU" else "cuda:1"
         self.tokenizer = CLIPTokenizer.from_pretrained(
             current_name + "/tokenizer/"
         )
@@ -80,7 +80,6 @@ class TritonPythonModel:
         self.num_inference_steps = 50
         self.guidance_scale = 7.5
         self.eta = 0.0
-        print("------------>>>> initttttttt")
 
     def execute(self, requests) -> "List[List[pb_utils.Tensor]]":
         """
@@ -88,7 +87,6 @@ class TritonPythonModel:
         :param requests: 1 or more requests received by Triton server.
         :return: text as input tensors
         """
-        print("------------->>>>>> exec")
         responses = []
         # for loop for batch requests (disabled in our case)
         for request in requests:
@@ -143,7 +141,6 @@ class TritonPythonModel:
             ## Fix later
             if negative_prompt[0] == "NONE":
                 negative_prompt = None
-            print("-------->>>>> negative_prompt ", negative_prompt)
             # get prompt text embeddings
             text_input = self.tokenizer(
                 prompt,
